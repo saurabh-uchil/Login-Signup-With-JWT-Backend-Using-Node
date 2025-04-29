@@ -29,5 +29,34 @@ A backend server for handling user authentication, email verification, and secur
 
 ---
 
-## 📁 Project Structure
+## ⚙️ Getting Started
+
+### 1. Clone the repository
+Use `git clone https://github.com/saurabh-uchil/Login-Signup-With-JWT-Backend-Using-Node.git` to clone the repo.
+
+### 2. Install dependencies
+npm install
+
+### 3. Create .env file
+PORT=3000  
+JWT_SECRET=your_jwt_secret  
+MONGO_USERNAME=your_mongo_username  
+MONGO_PASSWORD=your_mongo_password  
+TEST_EMAIL=your_email@example.com  
+APP_PASSWORD=your_email_app_password  
+
+### 4. Start the server
+npm start
+
+### 5. 🔒 Authentication Flow
+Register user with /register
+
+Email is sent with link /verify/:id
+
+User logs in via /login
+
+JWT is stored in cookie
+
+Protected routes verify token from req.cookies.myToken
+
 
