@@ -7,8 +7,8 @@ const sendEmail = (toEmail, id)=>{
 const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "devtestemail0502@gmail.com",
-      pass: "ddcn lcpt rjau ctbf", // NOT your Gmail password!
+      user: process.env.TEST_EMAIL,
+      pass: process.env.APP_PASSWORD,
     },
   });
   
